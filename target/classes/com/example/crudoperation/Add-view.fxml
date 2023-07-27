@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="398.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crudoperation.AddViewController">
+   <children>
+      <VBox layoutX="14.0" layoutY="70.0" prefHeight="260.0" prefWidth="102.0" spacing="30.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Label layoutX="30.0" layoutY="10.0" prefHeight="17.0" prefWidth="65.0" text="Id">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="65.0" text="Name" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="65.0" text="Age" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="36.0" prefHeight="17.0" prefWidth="65.0" text="Mobile" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="62.0" prefHeight="17.0" prefWidth="65.0" text="Parent" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="88.0" prefHeight="26.0" prefWidth="83.0" text="Address" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="14.0" layoutY="6.0" prefHeight="57.0" prefWidth="364.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblStdInfo" alignment="CENTER" prefHeight="57.0" prefWidth="309.0" text="Student Registeration" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="QuickType Bold" size="21.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fx:id="FClose" fill="#002d5b" glyphName="CLOSE" onMouseClicked="#handle_close" size="20">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <VBox layoutX="94.0" layoutY="49.0" prefHeight="281.0" prefWidth="228.0" spacing="30.0">
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="23.0" />
+         </padding>
+         <children>
+            <TextField fx:id="txtid" layoutX="10.0" layoutY="33.0" promptText="Enter you id" stylesheets="@Add.css" />
+            <TextField fx:id="txtName" promptText="Enter you name" />
+            <TextField fx:id="txtAge" layoutX="30.0" layoutY="30.0" promptText="Enter you age" />
+            <TextField fx:id="txtMobile" layoutX="30.0" layoutY="85.0" promptText="Enter you mobile" />
+            <TextField fx:id="txtParent" layoutX="30.0" layoutY="140.0" promptText="Enter you parent" />
+            <TextField fx:id="txtAddress" layoutX="30.0" layoutY="195.0" promptText="Enter you address" />
+         </children>
+      </VBox>
+      <Button fx:id="btnAdd" alignment="CENTER" defaultButton="true" layoutX="26.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="34.0" prefWidth="296.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@Add.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="SAVE" size="20" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

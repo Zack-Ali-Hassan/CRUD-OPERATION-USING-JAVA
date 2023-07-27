@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crudoperation.AboutSystemViewController">
+   <children>
+      <TextArea layoutX="21.0" layoutY="84.0" prefHeight="416.0" prefWidth="583.0" text="System UI rather is an important part of any Android user experience.&#10;This indicates that System UI is customizable without the need for any app update experience. &#10;It provides the basic framework for controlling the user interface of Android devices. &#10;It includes the navigation bar, the status bar, the lock screen, and the notification bar.&#10;You must understand that System UI is not an application that can be installed or downloaded on any Android device. &#10;It is rather the software that is running on the device and is controlling the visual interface of the device.&#10;System UI is a type of user interface that enables users to control and customize their displays independent of an app.&#10;System UI is an Android application that enables display customization independent of third-party apps. In even simpler terms&#10;everything you see on Android that is not an app is System UI." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="84.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextArea>
+      <Label alignment="CENTER" layoutX="251.0" layoutY="-2.0" prefHeight="100.0" prefWidth="600.0" text="About System" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Cambria Bold" size="51.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

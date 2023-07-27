@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.GlyphsStack?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crudoperation.LoginViewController">
+   <children>
+      <GlyphsStack layoutX="203.0" layoutY="133.0" />
+      <Pane prefHeight="400.0" prefWidth="264.0" style="-fx-background-color: #ec5b53;;">
+         <children>
+            <FontAwesomeIcon fill="#002d5b" glyphName="USER" layoutX="73.0" layoutY="155.0" size="150" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="306.0" prefHeight="50.0" prefWidth="228.0" text="Student Management System " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="213.0" prefHeight="50.0" prefWidth="228.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="286.0" prefHeight="50.0" prefWidth="228.0" text="Welcome" textFill="#002d5b">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="26.0" prefHeight="66.0" prefWidth="329.0" text="Login System" textFill="#002d5b">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="356.0" layoutY="133.0" prefHeight="31.0" prefWidth="211.0" promptText="Enter you username" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="356.0" layoutY="206.0" prefHeight="31.0" prefWidth="211.0" promptText="Enter you password" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="300.0" layoutY="293.0" mnemonicParsing="false" onAction="#login_Handle" prefHeight="31.0" prefWidth="264.0" style="-fx-background-color: #ec5b53; -fx-background-radius: 10;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="ARROW_RIGHT" size="15" />
+         </graphic>
+      </Button>
+      <FontAwesomeIcon fill="#002d5b" glyphName="USER" layoutX="304.0" layoutY="157.0" size="30" />
+      <FontAwesomeIcon fill="#002d5b" glyphName="KEY" layoutX="305.0" layoutY="232.0" size="30" />
+      <CheckBox layoutX="304.0" layoutY="264.0" mnemonicParsing="false" text="Remember me" textFill="#16334d">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="lblOutput" alignment="CENTER" layoutX="291.0" layoutY="360.0" prefHeight="17.0" prefWidth="278.0" textFill="#ec5b53">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="FClose" fill="#002d5b" glyphName="CLOSE" layoutX="578.0" layoutY="20.0" onMouseClicked="#handle_close" size="20">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </FontAwesomeIcon>
+   </children>
+</AnchorPane>
